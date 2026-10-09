@@ -16,6 +16,11 @@ body {
     line-height: 1.8;
 }
 
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
 
 /* Header & Footer 
 ------------------------------------*/
