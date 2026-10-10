@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --black: #1C1C1C;
     --red: #CD5C5C;
@@ -14,13 +18,37 @@ body {
     font-family: 'Open Sans' Verdana, Geneva, sans-serif;
     background-color: var(--tan);
     line-height: 1.8;
+    margin: 0;
 }
 
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
 }
 
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
 
 /* Header & Footer 
 ------------------------------------*/
@@ -33,20 +61,24 @@ h1 {
     display: inline-block;
     background-color: var(--red);
     padding: .2em .5em;
+    margin: 0;
 }
 
 h2 {
+    margin-top: 0;
     font-weight: 600;
     display: inline-block;
-    background-color: var(--green);
     padding: .2em .5em;
 }
 
 h3 {
     font-weight: 500;
     display: inline-block;
-    background-color: var(--green);
     padding: .2em .5em;
+}
+
+footer {
+    text-align: center;
 }
 
 /* Work Experience
